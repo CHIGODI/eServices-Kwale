@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 from pathlib import Path
 import os
-from dotenv import load_env
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'users',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -81,7 +82,7 @@ DATABASES = {
         'USER': os.getenv('ESERVICES_MYSQL_USER'),
         'PASSWORD': os.getenv('ESERVICES_MYSQL_PWD'),
         'HOST': os.getenv('ESERVICES_MYSQL_HOST'),
-        'PORT': os,getenv('DB_PORT'),
+        'PORT': os.getenv('DB_PORT'),
     }
 }
 

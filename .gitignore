@@ -1,3 +1,10 @@
 # BACK-END
 BACK-END/.env
 BACK-END/venv/
+BACK-END/base/__pycache__/*
+BACK-END/businesses/__pycache__/*
+BACK-END/categories/__pycache__/*
+BACK-END/core/__pycache__/*
+BACK-END/mpesa/__pycache__/*
+BACK-END/permits/__pycache__/*
+BACK-END/users/__pycache__/*
