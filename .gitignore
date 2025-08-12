@@ -12,6 +12,6 @@ BACK-END/users/migrations/*
 
 
 #FRONT-END
-FRONT-END/node_modules/
+FRONT-END/core/node_modules/
 FRONT-END/dist/
 FRONT-END/.env
