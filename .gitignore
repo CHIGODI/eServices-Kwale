@@ -9,3 +9,9 @@ BACK-END/mpesa/__pycache__/*
 BACK-END/permits/__pycache__/*
 BACK-END/users/__pycache__/*
 BACK-END/users/migrations/*
+
+
+#FRONT-END
+FRONT-END/node_modules/
+FRONT-END/dist/
+FRONT-END/.env

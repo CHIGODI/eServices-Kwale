@@ -32,8 +32,6 @@ class UserListCreateView(generics.ListCreateAPIView):
 
         # Hash the password here explicitly
         user = serializer.save()
-        user.set_password(request.data.get('password'))
-        user.save()
 
         return Response(UserSerializer(user).data, status=status.HTTP_201_CREATED)
 
@@ -60,10 +58,6 @@ class UserDetailView(APIView):
         user = get_object_or_404(User, pk=user_id)
         serializer = UserSerializer(user, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
-
-        if 'password' in request.data:
-            user.set_password(request.data['password'])
-            user.save()
 
         serializer.save()
         return Response(serializer.data)
