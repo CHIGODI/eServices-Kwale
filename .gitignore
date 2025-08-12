@@ -8,3 +8,4 @@ BACK-END/core/__pycache__/*
 BACK-END/mpesa/__pycache__/*
 BACK-END/permits/__pycache__/*
 BACK-END/users/__pycache__/*
+BACK-END/users/migrations/*
